@@ -276,8 +276,9 @@ export const farewell: Farewell = {
     image: "/msgimg/team_message.png",
     valediction: "With love and gratitude, your teammates,",
     signatures: [
+      "Pratik",
       "Pradnya",
-      "Smitha",
+      "Smita",
       "Sagar",
       "Chetan",
       "Nikita",

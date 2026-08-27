@@ -29,6 +29,7 @@
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
   --font-handwritten: var(--font-caveat);
+  --font-signature: var(--font-alex-brush);
 }
 
 body {

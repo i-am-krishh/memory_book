@@ -333,7 +333,7 @@ export const BookShell = ({ data }: BookShellProps) => {
               return (
                 <span
                   key={idx}
-                  className={`font-handwritten text-base md:text-lg font-black text-center ${tilts[idx % tilts.length]} ${colors[idx % colors.length]} hover:scale-110 transition-transform duration-200 cursor-default`}
+                  className={`font-signature text-xl md:text-2xl text-center ${tilts[idx % tilts.length]} ${colors[idx % colors.length]} hover:scale-110 transition-transform duration-200 cursor-default`}
                 >
                   {sig}
                 </span>

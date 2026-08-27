@@ -73,10 +73,10 @@ export const BookCover = ({ data, onOpen, isOpen }: BookCoverProps) => {
       {/* Portrait block */}
       <motion.div 
         variants={shouldReduceMotion ? {} : fadeUp(0.6)} 
-        className="z-10 my-2 flex flex-col items-center justify-center"
+        className="z-10 mt-8 mb-4 md:mt-10 flex flex-col items-center justify-center"
       >
-        <AvatarFrame variant="antique" className="w-28 h-28 md:w-32 md:h-32">
-          <Avatar src="/video/MicrosoftTeams-video.mp4" name={teammate.name} size="xl" glow />
+        <AvatarFrame variant="antique">
+          <Avatar src="/video/MicrosoftTeams-video.mp4" name={teammate.name} size="3xl" glow />
         </AvatarFrame>
       </motion.div>
  

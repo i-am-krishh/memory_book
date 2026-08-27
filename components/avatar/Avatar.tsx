@@ -7,7 +7,7 @@ import { AvatarPlaceholder } from "./AvatarPlaceholder";
 export interface AvatarProps {
   src?: string;
   name: string;
-  size?: "sm" | "md" | "lg" | "xl";
+  size?: "sm" | "md" | "lg" | "xl" | "2xl" | "3xl";
   glow?: boolean;
   className?: string;
 }
@@ -26,6 +26,8 @@ export const Avatar = ({
     md: "w-16 h-16 text-xl",
     lg: "w-24 h-24 text-3xl",
     xl: "w-36 h-36 text-4xl",
+    "2xl": "w-48 h-48 text-5xl",
+    "3xl": "w-56 h-56 text-6xl",
   };
 
   if (!src || error) {

@@ -276,7 +276,7 @@ export const GoodbyeLetter = ({ data, hideSignatures = false }: GoodbyeLetterPro
                       return (
                         <span
                           key={idx}
-                          className={`font-handwritten text-lg md:text-xl text-accent font-extrabold ${tiltClass}`}
+                          className={`font-signature text-2xl md:text-3xl text-accent ${tiltClass}`}
                         >
                           {sig}
                         </span>
