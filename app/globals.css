@@ -40,6 +40,12 @@ body {
   overflow-x: hidden;
 }
 
+.font-signature {
+  font-family: var(--font-signature);
+  font-weight: 600;
+  -webkit-text-stroke: 0.4px currentColor;
+}
+
 /* Premium vintage paper texture and noise */
 .paper-grain {
   position: relative;
