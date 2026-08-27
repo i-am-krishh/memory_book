@@ -45,9 +45,10 @@ export interface TeammateMessage {
   id: string;
   sender: string;
   role: string;
-  message: string;
+  message?: string;
+  image?: string;
   avatar: string;
-  color?: "yellow" | "blue" | "pink" | "green";
+  color?: "yellow" | "blue" | "pink" | "green" | "red" | "purple" | "orange" | string;
 }
 
 export interface InsideJoke {
@@ -58,9 +59,10 @@ export interface InsideJoke {
 
 export interface GoodbyeLetterData {
   salutation: string;
-  paragraphs: string[];
+  paragraphs?: string[];
   valediction: string;
   signatures: string[];
+  image?: string;
 }
 
 export interface Farewell {
