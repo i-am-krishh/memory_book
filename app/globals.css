@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -29,7 +30,7 @@
   --font-serif: var(--font-playfair);
   --font-sans: var(--font-inter);
   --font-handwritten: var(--font-caveat);
-  --font-signature: var(--font-alex-brush);
+  --font-signature: "Alex Brush", cursive;
 }
 
 body {
