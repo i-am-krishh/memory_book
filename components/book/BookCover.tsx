@@ -76,7 +76,7 @@ export const BookCover = ({ data, onOpen, isOpen }: BookCoverProps) => {
         className="z-10 my-1 flex flex-col items-center justify-center"
       >
         <AvatarFrame variant="antique">
-          <Avatar src={teammate.avatar} name={teammate.name} size="lg" glow />
+          <Avatar src="/video/MicrosoftTeams-video.mp4" name={teammate.name} size="xl" glow />
         </AvatarFrame>
       </motion.div>
  

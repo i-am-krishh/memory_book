@@ -32,6 +32,8 @@ export const Avatar = ({
     return <AvatarPlaceholder name={name} className={cn(sizeClasses[size], className)} />;
   }
 
+  const isVideo = src.toLowerCase().endsWith(".mp4") || src.toLowerCase().endsWith(".webm");
+
   return (
     <div
       className={cn(
@@ -41,12 +43,24 @@ export const Avatar = ({
         className
       )}
     >
-      <img
-        src={src}
-        alt={`${name}'s avatar`}
-        className="w-full h-full object-cover select-none"
-        onError={() => setError(true)}
-      />
+      {isVideo ? (
+        <video
+          src={src}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover select-none"
+          onError={() => setError(true)}
+        />
+      ) : (
+        <img
+          src={src}
+          alt={`${name}'s avatar`}
+          className="w-full h-full object-cover select-none"
+          onError={() => setError(true)}
+        />
+      )}
     </div>
   );
 };
